@@ -1,5 +1,6 @@
 import angular from 'angular';
 import uiRouter from 'angular-ui-router';
+import shiftsController from 'shifts/shifts';
 
 const app = angular.module('app', [uiRouter]);
 
@@ -9,7 +10,9 @@ app.config(($stateProvider, $urlRouterProvider, $locationProvider) => {
     $stateProvider
         .state('shifts', {
             url: '/',
-            template: require('shifts/shifts.html')
+            template: require('shifts/shifts.html'),
+            controller: shiftsController
+
         })
         .state('about', {
             url: '/about',

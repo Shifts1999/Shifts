@@ -1,0 +1,15 @@
+h5.progressBarText {
+    font-size: 12px;
+    position:absolute;
+    right:0;
+    left:0;
+    bottom:2;
+    text-align: center;
+    color: dimgray;
+    font-weight: bold;
+}
+
+.progress.active .progress-bar {
+    -webkit-transition: none !important;
+    transition: none !important;
+}
